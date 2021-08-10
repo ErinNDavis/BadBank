@@ -1,0 +1,36 @@
+.nav-link:hover {
+    background-color: lightseagreen;
+}
+
+.nav-link:selected {
+    background-color: lightseagreen;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.nav-link .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60%;
+    
+}
+
+.nav-link:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
