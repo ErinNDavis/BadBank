@@ -3,7 +3,8 @@ import { Form, Card, InputGroup, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DataContext from '../Context';
 
-function CreateAccount({ isUser }) {
+function CreateAccount() {
+  //const [show, setShow] = useState(true);
   const [Name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -18,13 +19,12 @@ function CreateAccount({ isUser }) {
       alert("Password must contain at least 8 characters.");
       setPassword("");
     } else {
-      ctx.saveUserInfo(Name, email, password, 0);
+      console.log(Name,email,password);
+      //ctx.users.push({Name, email, password});
       alert('Success! Account created.');
       console.log(JSON.stringify(Name), JSON.stringify(email), JSON.stringify(password));
       console.log(ctx)
     }
-
-    //DataContext.push({Name, email, password, balance: 0});
   }
   
   const NameInput = (e) => {
