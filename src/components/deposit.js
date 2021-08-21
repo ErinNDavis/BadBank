@@ -2,13 +2,19 @@ import {React, useState, useContext } from 'react';
 import { Card, Form, Button, InputGroup } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DataContext from '../Context';
+//import DataContext from '../App.js';
 
 function Deposit({ balance }) {
   const [deposit, setDeposit] = useState(0);
   const [isValid, setIsValid] = useState(false);
 
+  //------------
   const ctx = useContext(DataContext);
-  
+  console.log("++++++++");
+  console.log(ctx);
+  console.log("++++++++");
+  //-------------
+
   let status = `Account Balance $ ${balance}`;
   
   const handleChange = e => {
