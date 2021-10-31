@@ -4,11 +4,10 @@
 ##### This is a banking application without any security features. This is solely a coding exercise to help develop the skills to be able to write and deploy a banking application
 
 ### Installation Guidelines: 
-##### git clone
-##### git pull
-##### cd into the root folder for the application and use the command line to type http-server to run application in browser.
+##### From this repository's page on GitHub, click the green button labeled Code. Click "clone with HTTPs" and copy the URL. Open terminal and change the current working directory to the location where you want the cloned directory. Then type git clone and paste the URL that was copied and press enter. Once on your local machine type http-server into terminal to run application in browser. Navigate to localhost:8080 in your web browser to interact with the application. 
 
 ### Screenshots:
+
 
 ### Technology used:
 ##### This project was created using standalone React.
